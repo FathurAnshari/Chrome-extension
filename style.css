@@ -33,14 +33,17 @@ button{
     cursor: pointer;
 
 }
-#box{
-    cursor: pointer;
-    background: lightseagreen;
-    padding: 4rem;
-    width: 25rem;
-    text-align: center;
-    margin:2rem auto;
-    color: white;
-    font-weight:bold;
-    font-size: 2rem;
+ul{
+margin-top: 1rem;
+list-style: none;
+font-size: 1.4rem;
+padding-left:0;
+}
+li{
+   margin-top: 0.5rem;
+   text-decoration: none;
+}
+a{
+ color: #5f9341;
+ /* text-decoration: none ; */
 }

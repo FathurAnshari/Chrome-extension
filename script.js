@@ -1,15 +1,24 @@
 let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
-  const input = inputEl.value;
-  myLeads.push(input);
-  console.log(myLeads);
+  myLeads.push(inputEl.value);
+  inputEl.value = "";
+  renderLeads();
 });
 
-// let box = document.getElementById("box");
-
-// box.addEventListener("click", function () {
-//   console.log("I want to open the box!");
-// });
+function renderLeads() {
+  let listItem = "";
+  for (let i = 0; i < myLeads.length; i++) {
+    listItem += `
+    <li>
+        <a target='_blank' href='${myLeads[i]}'>
+            ${myLeads[i]}
+        </a>
+    </li>`;
+    console.log(listItem);
+  }
+  ulEl.innerHTML = listItem;
+}
