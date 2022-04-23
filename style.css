@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    /* border-color: #5f9341;
+    border-style: solid; */
+    border: 0.1rem solid #5f9341 ;
+    font-size: 1.8rem;
+}
+
+button{
+    padding: 1.2rem 4rem;
+    margin-top: 0.5rem ;
+    border-style: solid;
+    background: #5f9341;
+    border-color: #5f9341;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#box{
+    cursor: pointer;
+    background: lightseagreen;
+    padding: 4rem;
+    width: 25rem;
+    text-align: center;
+    margin:2rem auto;
+    color: white;
+    font-weight:bold;
+    font-size: 2rem;
+}
