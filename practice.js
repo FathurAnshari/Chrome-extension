@@ -1,6 +1,9 @@
-const recepient = "James";
-const sender = "Fathur Muhammad Fadlan Anshari";
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+let fruits = ["apple", "manggo", "orange", "banana", "pineaplle"];
 
-const email = `Hey ${recepient}! How is it going? Cheers ${sender}`;
+function getFirst(arr) {
+  return arr[3];
+}
 
-console.log(email);
+console.log(getFirst(numbers));
+console.log(getFirst(fruits));
