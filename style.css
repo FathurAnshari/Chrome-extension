@@ -33,6 +33,11 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+#delete-btn {
+  background: white;
+  color: #5f9341;
+}
 ul {
   margin-top: 1rem;
   list-style: none;
