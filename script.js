@@ -10,6 +10,14 @@ if (leadsFromLocalStorage !== null) {
   myLeads = leadsFromLocalStorage;
   render(myLeads);
 }
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value);
+  inputEl.value = "";
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+
+  render(myLeads);
+  console.log(localStorage.getItem("myLeads"));
+});
 
 tabBtn.addEventListener("click", function () {
   // chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {});
@@ -20,6 +28,11 @@ tabBtn.addEventListener("click", function () {
   });
 
   // console.log(tabs[0].url);
+});
+deleteBtn.addEventListener("dblclick", function () {
+  localStorage.clear();
+  myLeads = [];
+  render(myLeads);
 });
 
 function render(leads) {
@@ -35,18 +48,3 @@ function render(leads) {
   }
   ulEl.innerHTML = listItem;
 }
-
-deleteBtn.addEventListener("dblclick", function () {
-  localStorage.clear();
-  myLeads = [];
-  render(myLeads);
-});
-
-inputBtn.addEventListener("click", function () {
-  myLeads.push(inputEl.value);
-  inputEl.value = "";
-  localStorage.setItem("myLeads", JSON.stringify(myLeads));
-
-  render(myLeads);
-  console.log(localStorage.getItem("myLeads"));
-});

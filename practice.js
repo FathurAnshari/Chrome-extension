@@ -1,9 +1,27 @@
-let numbers = [1, 2, 3, 4, 5, 6, 7];
-let fruits = ["apple", "manggo", "orange", "banana", "pineaplle"];
+// const player = "Fathur";
+// const opponent = "Nick";
+// const game = "AmazingFighter";
+// let points = 0;
+// let hasWon = false;
 
-function getFirst(arr) {
-  return arr[3];
+// points += 100;
+// hasWon = true;
+
+// if (hasWon) {
+//   console.log(`${player} got ${points} points and won the ${game}!`);
+// } else {
+//   console.log(`The winner is ${opponent}! ${player} lost the game`);
+// }
+
+let myCourses = [
+  "Learn CSS Animations",
+  "UI Design Fundamentals",
+  "Intro to Clean Code",
+];
+
+function courses(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
-
-console.log(getFirst(numbers));
-console.log(getFirst(fruits));
+courses(myCourses);
